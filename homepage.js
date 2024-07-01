@@ -1,35 +1,10 @@
-const productInforFrame1 = [
-  {
-    id: 1,
-    srcProduct: "../img-pages/rangsayi.png",
-    frame1CateItemTitle: "Cà Phê I - Khát Vọng Khởi Nghiệp",
-    frame1ProductCardPrice: "80.000đ",
-    frame1ProductCardScore: "4.8",
-    srcStar: "../icon-pages/star-svgrepo-com.svg",
-  },
-  {
-    id: 2,
-    srcProduct: "../img-pages/rangsaynau.png",
-    frame1CateItemTitle: "Cà Phê S - Chinh Phục Thành Công",
-    frame1ProductCardPrice: "90.000đ",
-    frame1ProductCardScore: "4.9",
-    srcStar: "../icon-pages/star-svgrepo-com.svg",
-  },
-  {
-    id: 3,
-    srcProduct: "../img-pages/rangsays.png",
-    frame1CateItemTitle: "Cà Phê Nâu - Sức Sống Đại Ngàn",
-    frame1ProductCardPrice: "100.000đ",
-    frame1ProductCardScore: "5.0",
-    srcStar: "../icon-pages/star-svgrepo-com.svg",
-  },
-];
+//Rang say
 const frame1Item = document.getElementById("frame1-item");
+const productInforFrame1 = JSON.parse(localStorage.getItem("frame1-item"));
 
 for (let i = 0; i < productInforFrame1.length; i++) {
   frame1Item.innerHTML += `
-    <div class="frame1-col">
-                        <a href="">
+    <div class="frame1-col" onClick="getDetail1(${productInforFrame1[i].Id})">
                             <div class="frame1-cate-item">
                                 <div class="frame1-cate-img">
                                     <img src="${productInforFrame1[i].srcProduct}" alt="" class="frame1-img">
@@ -44,56 +19,22 @@ for (let i = 0; i < productInforFrame1.length; i++) {
                                     </div>
                                 </div>
                             </div>
-                        </a>
                     </div>
                         `;
 }
 
-// Frame2
-const productInforFrame2 = [
-  {
-    id: 4,
-    srcProduct: "../img-pages/sangtao1.png",
-    frame2CateItemTitle: "Sáng Tạo 1",
-    frame2CateItemContent: "Thơm dịu nhẹ, vị đậm đà",
-    frame2ProductCardPrice: "85.000 VNĐ",
-    frame2ProductCardScore: "4.7",
-    srcStar: "../icon-pages/star-svgrepo-com.svg",
-  },
-  {
-    id: 5,
-    srcProduct: "../img-pages/sangtao2.png",
-    frame2CateItemTitle: "Sáng Tạo 2",
-    frame2CateItemContent: "Thơm dịu nhẹ, vị hài hòa",
-    frame2ProductCardPrice: "90.000 VNĐ",
-    frame2ProductCardScore: "4.9",
-    srcStar: "../icon-pages/star-svgrepo-com.svg",
-  },
-  {
-    id: 6,
-    srcProduct: "../img-pages/sangtao3.png",
-    frame2CateItemTitle: "Sáng Tạo 3",
-    frame2CateItemContent: "Rất thơm, vị đắng nhẹ, chua thanh",
-    frame2ProductCardPrice: "95.000 VNĐ",
-    frame2ProductCardScore: "4.8",
-    srcStar: "../icon-pages/star-svgrepo-com.svg",
-  },
-  {
-    id: 7,
-    srcProduct: "../img-pages/sangtao4.png",
-    frame2CateItemTitle: "Sáng Tạo 4",
-    frame2CateItemContent: "Thơm lâu, vị cân bằng, thế chất đậm",
-    frame2ProductCardPrice: "100.000 VNĐ",
-    frame2ProductCardScore: "5.0",
-    srcStar: "../icon-pages/star-svgrepo-com.svg",
-  },
-];
+function getDetail1(id) {
+  localStorage.setItem("product1Number", `${id}`);
+  window.location.href = "./components/product/product.html";
+}
+
+// Frame2, Sáng tạo
+const productInforFrame2 = JSON.parse(localStorage.getItem("frame2-item"));
 const frame2Item = document.getElementById("frame2-item");
 
 for (let i = 0; i < productInforFrame2.length; i++) {
   frame2Item.innerHTML += `
-  <div class="frame2-col">
-                        <a href="">
+  <div class="frame2-col" onClick="getDetail2(${productInforFrame2[i].Id})">
                             <div class="frame2-cate-item">
                                 <img src="${productInforFrame2[i].srcProduct}" alt="" class="frame2-img">
                                 <div class="frame2-cate-item-info">
@@ -106,56 +47,22 @@ for (let i = 0; i < productInforFrame2.length; i++) {
                                     </div>
                                 </div>
                             </div>
-                        </a>
                     </div>
     `;
 }
+function getDetail2(id) {
+  localStorage.setItem("product2Number", `${id}`);
+  window.location.href = "./components/product/SangTao.html";
+}
 
-// frame3;
-const productInforFrame3 = [
-  {
-    id: 8,
-    srcProduct: "../img-pages/chephin1.png",
-    frame3CateItemTitle: "Chế Phin 1",
-    frame3CateItemContent: "Thơm dịu nhẹ, vị đậm đà",
-    frame3ProductCardPrice: "85.000 VNĐ",
-    frame3ProductCardScore: "4.7",
-    srcStar: "../icon-pages/star-svgrepo-com.svg",
-  },
-  {
-    id: 9,
-    srcProduct: "../img-pages/chephin2.png",
-    frame3CateItemTitle: "Chế Phin 2",
-    frame3CateItemContent: "Thơm dịu nhẹ, vị hài hòa",
-    frame3ProductCardPrice: "90.000 VNĐ",
-    frame3ProductCardScore: "4.9",
-    srcStar: "../icon-pages/star-svgrepo-com.svg",
-  },
-  {
-    id: 10,
-    srcProduct: "../img-pages/chephin3.png",
-    frame3CateItemTitle: "Chế Phin 3",
-    frame3CateItemContent: "Rất thơm, vị đắng nhẹ, chua thanh",
-    frame3ProductCardPrice: "95.000 VNĐ",
-    frame3ProductCardScore: "4.8",
-    srcStar: "../icon-pages/star-svgrepo-com.svg",
-  },
-  {
-    id: 11,
-    srcProduct: "../img-pages/chephin4.png",
-    frame3CateItemTitle: "Chế phin 4",
-    frame3CateItemContent: "Thơm lâu, vị cân bằng, thế chất đậm",
-    frame3ProductCardPrice: "100.000 VNĐ",
-    frame3ProductCardScore: "5.0",
-    srcStar: "../icon-pages/star-svgrepo-com.svg",
-  },
-];
+// frame3; chế phin
+
+const productInforFrame3 = JSON.parse(localStorage.getItem("frame3-item"));
 const frame3Item = document.getElementById("frame3-item");
 
 for (let i = 0; i < productInforFrame3.length; i++) {
   frame3Item.innerHTML += `
-  <div class="frame3-col">
-                        <a href="">
+  <div class="frame3-col" onClick="getDetail3(${productInforFrame3[i].Id})">
                             <div class="frame3-cate-item">
                                 <img src="${productInforFrame3[i].srcProduct}" alt="" class="frame3-img">
                                 <div class="frame3-cate-item-info">
@@ -168,7 +75,10 @@ for (let i = 0; i < productInforFrame3.length; i++) {
                                     </div>
                                 </div>
                             </div>
-                        </a>
                     </div>
     `;
+}
+function getDetail3(id) {
+  localStorage.setItem("product3Number", `${id}`);
+  window.location.href = "./components/product/ChePhin.html";
 }

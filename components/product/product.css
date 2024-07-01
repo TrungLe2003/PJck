@@ -17,6 +17,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #eeeeee;
+  z-index: 1;
 }
 
 /* header */

@@ -17,9 +17,11 @@ submit.addEventListener("click", (e) => {
     return;
   } else if (username.value.strength < 6) {
     usernameErr.innerHTML = "<i>Tên đăng nhập phải lớn hơn 6 kí tự</i>";
+    return;
   }
   if (!password.value) {
     passwordErr.innerHTML = "<i>Yêu cầu mật khẩu</i>";
+    return;
   } else if (password.value !== confirm.value) {
     passwordErr.innerHTML = "<i>Mật khẩu không trùng nhau</i>";
     console.log("password error");

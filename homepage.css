@@ -13,7 +13,9 @@ header,
 footer {
   background-color: #eee;
 }
-
+header {
+  z-index: 1;
+}
 a {
   text-decoration: none;
   color: black;
@@ -43,7 +45,7 @@ header {
   position: relative;
 }
 
-.home{
+.home {
   position: absolute;
   left: 0;
 }
@@ -66,12 +68,12 @@ header {
   height: 75px;
 }
 
-.act{
+.act {
   position: absolute;
   right: 0;
 }
 
-.act-button{
+.act-button {
   border: 1px solid #ffb700;
   border-radius: 5px;
   padding: 10px 15px;
@@ -96,7 +98,7 @@ header {
   font-weight: bold;
 }
 
-.footer-logo img{
+.footer-logo img {
   width: 200px;
 }
 
@@ -117,20 +119,20 @@ header {
     padding: 0 30px;
   }
 
-  .home{
+  .home {
     display: none;
   }
 
-  .logo{
+  .logo {
     position: absolute;
     left: 30px;
   }
 
-  .act{
+  .act {
     position: absolute;
     right: 30px;
   }
-  
+
   /* main */
 
   .container-main {
@@ -292,11 +294,11 @@ header {
     margin: 0 auto;
   }
 
-  .home{
+  .home {
     display: none;
   }
 
-  .logo{
+  .logo {
     position: absolute;
     left: 0;
   }
