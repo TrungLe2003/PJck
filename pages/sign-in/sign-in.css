@@ -10,7 +10,7 @@ a{
 }
 
 body{
-    background-image: url('../img-pages/background.png');
+    background-image: url('../../public/img/background.png');
     background-size: cover;
     background-position: top;
 }
@@ -50,13 +50,13 @@ main{
     height: 100%;
     padding: 0 40px 0 10px;
     border-radius: 10px;
-    border: 1px solid #cccccc;
+    border: 1px solid #ddd;
     background-color: transparent;
     color: white;
 }
 
 .form-group-input::placeholder{
-    color: #cccccc;
+    color: #ddd;
 }
 
 .form-group-input:focus{
@@ -84,14 +84,14 @@ main{
     font-weight: bold;
 }
 
-.sign-up{
+.sign-in{
     border: 1px solid #ffb700;
     background-color: #ffb700;
 }
 
 .cancel{
     border: 1px solid #ffb700;
-    background-color: #cccccc;
+    background-color: #ddd;
 }
 
 .form-group-bnt:hover{
@@ -139,4 +139,10 @@ main{
         width: 540px;
         margin: 0 auto;
     }
+}
+
+.err {
+    margin-top: 10px;
+    color: red;
+    font-size: 15px;
 }
