@@ -356,3 +356,10 @@ for (let i = 0; i < addToCart.length; i++) {
     getTotal();
   });
 }
+
+//Đăng xuất
+const logOut = document.getElementById("log-out");
+logOut.addEventListener("click", () => {
+  localStorage.removeItem("currentSignIn");
+  window.location.href = "../../../pages/sign-in/sign-in.html";
+});
