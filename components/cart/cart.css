@@ -16,6 +16,7 @@ a:hover {
 
 main {
   background-color: #f6f6f6;
+  padding-bottom: 50px;
 }
 
 header,
@@ -708,24 +709,25 @@ header {
   }
 
   /* -------------------- Main -------------------- */
-
-  .container-main {
-    margin: 10px;
-  }
   .frame1-name {
     padding-top: 60px;
+    margin-left: 40px;
   }
 
   .frame1-item {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-top: 20px;
+    gap: 20px;
   }
 
   .frame1-col {
     background-color: #eee;
     padding: 20px;
+    padding-left: 40px;
     border-radius: 20px;
     width: 100%;
   }
@@ -736,22 +738,68 @@ header {
   }
 
   .frame1-img {
-    width: 150px;
+    width: 200px;
     border-radius: 10px;
     margin-right: 20px;
   }
 
+  .frame1-cate-item-title {
+    font-size: 30px;
+  }
   .frame1-product-card-row {
-    border: 1px solid black;
     display: flex;
     align-items: center;
     padding-top: 20px;
   }
-  .frame1-product .frame1-product-card-price {
+  .frame1-product-card-price {
     padding-right: 20px;
     font-size: 20px;
   }
 
+  .incr-decr-btn {
+    margin-left: 100px;
+    border-radius: 3px;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .incr-decr-btn button {
+    width: 100px;
+    height: 30px;
+    font-size: 25px;
+    border-radius: 3px;
+  }
+
+  .increase-btn {
+    border: none;
+    background-color: #ffb700;
+  }
+
+  .decrease-btn {
+    border: 1px solid #ffb700;
+  }
+
+  .total-price {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    left: 900px;
+  }
+
+  .total-price-content {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .total-price-element {
+    font-size: 20px;
+  }
   /* -------------------- Footer -------------------- */
 
   .container-footer {
