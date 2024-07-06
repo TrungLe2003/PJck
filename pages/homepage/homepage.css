@@ -33,7 +33,7 @@ header {
 /* -------------------- Header -------------------- */
 
 .container-header {
-    height: 80px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,21 +60,23 @@ header {
 }
 
 .logo img {
-    height: 75px;
+    height: 55px;
 }
 
 .act{
     position: absolute;
     right: 0;
     display: flex;
+    align-items: center;
 }
 
 .act-button{
     border: 1px solid #ffb700;
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 5px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 12px;
 }
 
 .sign-in {
@@ -86,13 +88,19 @@ header {
     margin-left: 5px;
 }
 
+.sign-out {
+    background-color: #ffb700;
+    margin-left: 15px;
+    height: 25.2px;
+}
+
 .act button:hover {
     cursor: pointer;
     opacity: 0.75;
 }
 
 .act-icon {
-    height: 30px;
+    height: 25px;
 }
 
 .act-icon-cart{
@@ -111,10 +119,14 @@ header {
     padding-right: 20px;
 }
 
+.username{
+    font-size: 0.75rem;
+}
+
 .total{
     position: absolute;
     top: -5px;
-    left: 22px;
+    left: 18px;
     background-color: #fe6f47;
     padding: 2px 2px 4px 2px;
     border-radius: 5px 5px 10px 5px;
