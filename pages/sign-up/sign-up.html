@@ -1,62 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up | TrungNguyen Mart</title>
-    <link rel="stylesheet" href="sign-up.css">
-    <link rel="shortcut icon" href="https://trungnguyenlegend.com/wp-content/uploads/2018/03/favicon.png">
-</head>
-<body>
+    <link rel="stylesheet" href="sign-up.css" />
+    <link
+      rel="shortcut icon"
+      href="https://trungnguyenlegend.com/wp-content/uploads/2018/03/favicon.png"
+    />
+  </head>
+  <body>
     <main>
-        <div class="container">
-            <img src="../../public/img/logo.png" alt="" class="logo">
-    
-            <h1 class="heading">Đăng Ký</h1>
-    
-            <form class="form" id="sign-up">
-                <div class="form-group">
-                    <input type="text" class="form-group-input" placeholder="Username" id="username">
-                    <img src="../../public/icon/user-svgrepo-com.svg" alt="" class="form-group-icon">
-                </div>
+      <div class="container">
+        <img src="../../public/img/logo.png" alt="" class="logo" />
 
-                <div class="err" id="username-err"></div>
-    
-                <div class="form-group">
-                    <input type="password" class="form-group-input" placeholder="Password" id="password">
-                    <img src="../../public/icon/lock-alt-svgrepo-com.svg" alt="" class="form-group-icon">
-                </div>
+        <h1 class="heading">Đăng Ký</h1>
 
-                <div class="err" id="password-err"></div>
-    
-                <div class="form-group">
-                    <input type="password" class="form-group-input" placeholder="Confirm Password" id="confirm">
-                    <img src="../../public/icon/lock-alt-svgrepo-com.svg" alt="" class="form-group-icon">
-                </div>
+        <form class="form" id="sign-up">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-group-input"
+              placeholder="Username"
+              id="username"
+            />
+            <img
+              src="../../public/icon/user-svgrepo-com.svg"
+              alt=""
+              class="form-group-icon"
+            />
+          </div>
 
-                <div class="err" id="confirm-err"></div>
-    
-                <div class="form-group">
-                    <button type="submit" class="form-group-bnt sign-up" id="submit">Đăng Ký</button>
-                </div>
+          <div class="err" id="username-err"></div>
 
-                <div class="form-group form-group-cancel">
-                    <a href="../homepage/homepage.html" class="form-group-link">
-                        <button type="button" class="form-group-bnt cancel">Quay Lại Trang Chủ</button>
-                    </a>
-                </div>
-            </form>
-    
-            <p class="text">
-                <span>Bạn đã có tài khoản?</span>
-                <a href="../sign-in/sign-in.html" class="text-link">
-                    <span>Đăng Nhập</span>
-                    <img src="../../public/icon/right-arrow-svgrepo-com.svg" alt="">
-                </a>
-            </p>
-        </div>
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-group-input"
+              placeholder="Password"
+              id="password"
+            />
+            <img
+              src="../../public/icon/lock-alt-svgrepo-com.svg"
+              alt=""
+              class="form-group-icon"
+            />
+          </div>
+
+          <div class="err" id="password-err"></div>
+
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-group-input"
+              placeholder="Confirm Password"
+              id="confirm"
+            />
+            <img
+              src="../../public/icon/lock-alt-svgrepo-com.svg"
+              alt=""
+              class="form-group-icon"
+            />
+          </div>
+
+          <div class="err" id="confirm-err"></div>
+
+          <div class="form-group">
+            <button type="submit" class="form-group-bnt sign-up" id="submit">
+              Đăng Ký
+            </button>
+          </div>
+
+          <div class="form-group form-group-cancel">
+            <a href="../../index.html" class="form-group-link">
+              <button type="button" class="form-group-bnt cancel">
+                Quay Lại Trang Chủ
+              </button>
+            </a>
+          </div>
+        </form>
+
+        <p class="text">
+          <span>Bạn đã có tài khoản?</span>
+          <a href="../sign-in/sign-in.html" class="text-link">
+            <span>Đăng Nhập</span>
+            <img src="../../public/icon/right-arrow-svgrepo-com.svg" alt="" />
+          </a>
+        </p>
+      </div>
     </main>
-    
+
     <script src="sign-up.js"></script>
-</body>
+  </body>
 </html>
